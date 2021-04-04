@@ -1,17 +1,65 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
   margin: 0;
+}
+
+h1,h2,p, span{
+    font-family: Lato;
+    text-align: center;
+}
+
+.container-content{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-family: Lato;
+  line-height: 30px;
 }
 
-h1,h2,p{
-    font-family: Lato;
+.container-presentation-text{
+  width: 100%;
+  color: white;
+  z-index: 2;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.presentation-intro{
+  width: auto;
+  display: inline-block;
+  border: 2px solid white;
+  padding: 30px 50px 30px 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+a:link, a:visited, a:hover, a:active{
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px){
+  .presentation-intro{
+    width: auto;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 15px 25px 15px 25px;
     text-align: center;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+  }
 }
